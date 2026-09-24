@@ -1,5 +1,3 @@
-import Header from "./components/Header.jsx"
-import logo from "./assets/logo.png"
 import { createBrowserRouter } from 'react-router-dom';
 import  RootLayout from "./layout/RootLayout.jsx";
 import  Home from "./pages/Home.jsx";
@@ -21,6 +19,8 @@ export const router = createBrowserRouter(
         { index: true, element: <Home /> },
         { path: 'new-build', element: <NewBuild /> },
         { path: 'profile', element: <Profile /> },
+        { path: 'login', element: <Login /> },
+        { path: 'signup', element: <Signup /> },
         { path: '*', element: <NotFound /> },
       ],
     },
