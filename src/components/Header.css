@@ -1,0 +1,85 @@
+header{
+    background-color: #ecdab5;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #8c7556;
+    padding: 0 32px;
+
+}
+
+.brand{
+    display: flex;
+    color: #7a1f16;
+    margin-bottom: 9px;
+}
+
+.logo{
+  width: 65px;
+  object-fit: contain;
+}
+
+.nav{
+    margin-inline: 60px;
+    display: flex;
+    gap: 20px;
+    font-family: "EB Garamond", Garamond, Georgia, serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    align-items: center;
+}
+
+.user{
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "EB Garamond", Garamond, Georgia, serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+/* .{
+    border: none;
+    border-radius: 4px;
+    font-family: "Grenze Gotisch", serif;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #7a1f16;
+    color: #ecdab5;
+} */
+
+.signup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 4px;
+  font-family: "EB Garamond", Garamond, Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background-color: #7a1f16;
+  color: #f6ead2;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.signup:hover {
+  background-color: #5e160f;
+}
+
+.signup:active {
+  transform: translateY(1px);
+}
+
+.signup:focus-visible {
+  outline: 2px solid #b8860b;
+  outline-offset: 2px;
+}
