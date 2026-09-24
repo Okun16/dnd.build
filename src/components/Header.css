@@ -3,14 +3,20 @@ header{
     display: flex;
     align-items: center;
     border-bottom: 3px solid #8c7556;
-    padding: 0 32px;
-
+    padding: 8px 32px;
 }
 
 .brand{
     display: flex;
+    margin-bottom: 4px;
+    align-items: center;
+}
+
+.brand-name{
+    font-family: "Grenze Gotisch", serif;
     color: #7a1f16;
-    margin-bottom: 9px;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .logo{
@@ -22,7 +28,7 @@ header{
     margin-inline: 60px;
     display: flex;
     gap: 20px;
-    font-family: "EB Garamond", Garamond, Georgia, serif;
+    font-family: "Alegreya", Georgia, serif;
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -34,7 +40,7 @@ header{
     display: flex;
     gap: 20px;
     align-items: center;
-    font-family: "EB Garamond", Garamond, Georgia, serif;
+    font-family: "Alegreya", Georgia, serif;
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -59,11 +65,10 @@ header{
   padding: 0 20px;
   border: none;
   border-radius: 4px;
-  font-family: "EB Garamond", Garamond, Georgia, serif;
-  font-size: 0.95rem;
+  font-family: "Alegreya", Georgia, serif;
+  font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   line-height: 1;
   cursor: pointer;
   background-color: #7a1f16;

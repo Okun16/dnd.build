@@ -1,0 +1,17 @@
+.not-found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Alegreya", Georgia, serif;
+    
+}
+
+.not-found > p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.not-found > Link{
+    font-size: 1.2rem;
+    font-weight: 450;
+}
