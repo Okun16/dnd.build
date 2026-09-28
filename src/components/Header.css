@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;   /* removes the underline */
+  color: inherit;          /* uses the parent's text color instead of blue/purple */
+}
+
 header{
     background-color: #ecdab5;
     display: flex;
@@ -66,7 +71,7 @@ header{
   border: none;
   border-radius: 4px;
   font-family: "Alegreya", Georgia, serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   line-height: 1;

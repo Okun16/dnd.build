@@ -1,0 +1,42 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  margin: 18px 0 0;              /* reset default <dl> margins */
+  font-variant-numeric: lining-nums;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 0 8px;
+  background-color: #f6ead2;
+  border: 1px solid #8c7556;
+}
+
+.stat dt {
+  color: #7a1f16;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.stat dd {
+  margin: 0;                     /* remove the 40px indent */
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.stat .mod {
+  display: block;                /* modifier on its own line */
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #5a4a3a;
+}
+
+@media (max-width: 480px) {
+  .stats { grid-template-columns: repeat(3, 1fr); }
+}

@@ -1,0 +1,47 @@
+.build{
+  margin-top: 20px;
+  padding-inline: 20px;
+  padding-block: 30px;
+  width: 100%;
+  min-width: 280px;   /* scores still fit */
+  box-sizing: border-box; /* padding counts inside the width */
+  background-color: #ecdab5;
+  border-top: solid #b8860b 6px;
+  border-bottom: solid #b8860b 6px;
+  box-shadow:
+    0 1px 2px rgba(60, 38, 14, 0.18),
+    0 6px 18px rgba(60, 38, 14, 0.12);
+}
+
+.build-title{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.build-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.build-rule {
+  height: 4px;
+  margin: 12px 0 14px;
+  background: #7a1f16;   /* crimson */
+  clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+}
+
+.build-summary > .text{
+  font-size: 1.1rem;
+}
+
+.stats{
+  display: grid;
+  grid-column: auto;
+  gap: 6px;
+  grid-template-columns: repeat(6, 1fr);
+  font-variant-numeric: lining-nums;
+}
+
+
+
