@@ -3,7 +3,11 @@ import { mockUsers } from "../data/mockUser";
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 const SESION_KEY = "dnd.build";
 
-const publicUser = ({ password, ...user }) => user;
+const publicUser = (user) => {
+  const copy = { ...user };
+  delete copy.password;
+  return copy;
+};
 
 export async function login(usern, password){
     await wait(400);
