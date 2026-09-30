@@ -3,8 +3,11 @@ import { useEffect, useState } from "react";
 import { getPopularBuilds, getRandomBuild } from "../api/builds";
 import Build from "../components/Build.jsx";
 import "./Home.css";
+import { useAuth } from "../be/authContext.jsx";
 
 export default function Home() {
+
+  const {user} = useAuth();
   const [featured, setFeatured] = useState(null);
   const [popular, setPopular] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -25,8 +28,9 @@ export default function Home() {
     load();
   }, []);
 
+
   return (
-    <main className="home">
+    <main className="page-layout">
       <section className="hero">
         <div className="description">
           <p className="secondary-text">Character builder for D&D 5e</p>
@@ -43,7 +47,7 @@ export default function Home() {
 
         <div className="show-build">
           <p className="comment">Featured build</p>
-          {loading && <p className ="secondary-text">Rolling the dice…</p>}
+          {loading && <p className ="comment">Rolling the dice…</p>}
           {error && <p className ="secondary-text">Seems like we're having a problem loading the build.</p>}
           {!loading && !error && featured && <Build build={featured} />}
         </div>
@@ -80,7 +84,7 @@ export default function Home() {
           <Link className="link" to="/new-build">Make your own</Link>
         </div>
         {!loading && popular.length === 0 ? (
-          <p>Currently there are no builds.</p>
+          <p className="secondary-text">Currently there are no builds.</p>
         ) : (
           <div className="build-grid">
             {popular.map((build) => (
@@ -92,8 +96,8 @@ export default function Home() {
       <section className="account">
         <p className="fleuron">❦</p>
         <h3 className="main-title">Your party is waiting</h3>
-        <p className="secondary-text">Create a free account to save builds and share them with your group.</p>
-        <Link to="/signup" className="button">Sign up</Link>
+        <p className="secondary-text">{user ? "Start creating builds right now!" : "Create a free account to save builds and share them with your group."}</p>
+        <Link to={user ? "/new-build" : "/signup"} className="button">{user ? "New build" : "Sign up"}</Link>
       </section>
     </main>
   );

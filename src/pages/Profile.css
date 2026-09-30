@@ -1,0 +1,34 @@
+.page-layout > .main-title{
+    font-size: 3rem;
+}
+
+.profile-login > .button{
+    margin-top: 24px;
+}
+
+.page-layout > .window{
+    margin-inline: auto;
+    max-width: 480px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-login > .text{
+    font-size: 1.5rem;
+}
+
+
+.build-grid > .window{
+    margin-inline: auto;
+    max-width: 560px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.build-grid > .window > .button{
+    margin-top: 24px;
+}

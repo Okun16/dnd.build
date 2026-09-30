@@ -5,7 +5,8 @@ import  NewBuild from "./pages/NewBuild.jsx";
 import  Profile from "./pages/Profile.jsx";
 import  Signup from "./pages/Signup.jsx";
 import  Login from "./pages/Login.jsx";
-import NotFound from "./pages/NotFound.jsx"
+import  NotFound from "./pages/NotFound.jsx"
+import  CharacterSheet from "./pages/CharacterSheet.jsx"
 
 
 
@@ -19,6 +20,7 @@ export const router = createBrowserRouter(
         { index: true, element: <Home build={null}/> },
         { path: 'new-build', element: <NewBuild /> },
         { path: 'profile', element: <Profile /> },
+        { path: 'build/:id', element: <CharacterSheet /> },
         { path: 'login', element: <Login /> },
         { path: 'signup', element: <Signup /> },
         { path: '*', element: <NotFound /> },
